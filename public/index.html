@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- META | SEO -->
+<title>PintBlog — From Blog to Pin in a Blink</title>
+<meta name="title" content="PintBlog — From Blog to Pin in a Blink">
+<meta name="description" content="PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.">
+<meta name="keywords" content="PintBlog, Pinterest automation, Blogger automation, auto post to Pinterest, Pinterest API, Blogger API, social media automation, content sharing tool, free script, Pinterest Blogger integration">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="author" content="PintBlog Team">
+<meta name="theme-color" content="#E60023">
+<link rel="canonical" href="https://pintblog.vercel.app/">
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pintblog.vercel.app/">
+<meta property="og:title" content="PintBlog — From Blog to Pin in a Blink">
+<meta property="og:description" content="PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.">
+<meta property="og:image" content="https://pintblog.vercel.app/cover.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://pintblog.vercel.app/">
+<meta property="twitter:title" content="PintBlog — From Blog to Pin in a Blink">
+<meta property="twitter:description" content="PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.">
+<meta property="twitter:image" content="https://pintblog.vercel.app/cover.png">
+
+
+<link rel="icon" type="image/png" href="https://pintblog.vercel.app/favicon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pintblog.vercel.app/#organization",
+      "name": "PintBlog",
+      "url": "https://pintblog.vercel.app/",
+      "logo": "https://pintblog.vercel.app/favicon.png",
+      "sameAs": [
+        "https://twitter.com/pintblog",
+        "https://facebook.com/pintblog",
+        "https://pinterest.com/pintblog"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pintblog.vercel.app/#website",
+      "url": "https://pintblog.vercel.app/",
+      "name": "PintBlog",
+      "description": "PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.",
+      "publisher": {
+        "@id": "https://pintblog.vercel.app/#organization"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pintblog.vercel.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://pintblog.vercel.app/#webapp",
+      "name": "PintBlog Automation Tool",
+      "url": "https://pintblog.vercel.app/",
+      "applicationCategory": "AutomationTool",
+      "operatingSystem": "All",
+      "description": "PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}
+</script>
+ 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img width="40" height="40" src="favicon.png"/>
+                <div>
+                    <h1>PintBlog</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="loading-section" id="loadingSection">
+                <div class="shimmer-card">
+                    <div class="shimmer-line" style="width: 60%;"></div>
+                    <div class="shimmer-line" style="width: 80%;"></div>
+                    <div class="shimmer-line" style="width: 40%;"></div>
+                </div>
+            </section>
+
+            
+            <section class="auth-section" id="authSection" style="display: none;">
+                <div class="section-header">
+                    <h2>Connect Your Accounts</h2>
+                    <p>Connect both platforms to start publishing content</p>
+                </div>
+                <div class="auth-grid">
+                    <div class="auth-card">
+                        <div class="auth-header">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="16" fill="#E60023"/>
+                                <path d="M16 8C11.6 8 8 11.6 8 16C8 19.4 10 22.3 12.9 23.5C12.8 22.7 12.8 21.5 13 20.6L14.3 15.1C14.3 15.1 14 14.4 14 13.4C14 11.9 14.9 10.8 16 10.8C17 10.8 17.4 11.5 17.4 12.3C17.4 13.2 16.8 14.5 16.5 15.7C16.3 16.7 17 17.5 18 17.5C19.8 17.5 21.2 15.6 21.2 12.8C21.2 10.4 19.5 8.7 16 8.7C13.1 8.7 11.4 10.9 11.4 13.2C11.4 14.1 11.8 15 12.2 15.5C12.3 15.6 12.3 15.7 12.3 15.8C12.2 16.2 12 16.9 12 17C12 17.2 11.9 17.2 11.7 17.1C10.4 16.5 9.6 14.7 9.6 13.2C9.6 9.9 12 6.9 16.3 6.9C19.8 6.9 22.5 9.4 22.5 12.8C22.5 16.4 20.3 19.2 17.2 19.2C16.2 19.2 15.2 18.7 14.9 18.1L14.2 20.9C13.9 22 13.1 23.3 12.6 24.1C13.7 24.4 14.8 24.6 16 24.6C20.4 24.6 24 21 24 16.6C24 11.6 20.4 8 16 8Z" fill="white"/>
+                            </svg>
+                            <div>
+                                <h3>Pinterest</h3>
+                                <span class="status-badge" id="pinterestBadge">Not Connected</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-connect" id="pinterestAuthBtn">
+                            <span>Connect Pinterest</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="auth-card">
+                        <div class="auth-header">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="16" fill="#FF5722"/>
+                                <path d="M12 10H20C20.55 10 21 10.45 21 11V21C21 21.55 20.55 22 20 22H12C11.45 22 11 21.55 11 21V11C11 10.45 11.45 10 12 10Z" fill="white"/>
+                                <path d="M14 13H18V14H14V13Z" fill="#FF5722"/>
+                                <path d="M14 15H18V16H14V15Z" fill="#FF5722"/>
+                                <path d="M14 17H17V18H14V17Z" fill="#FF5722"/>
+                            </svg>
+                            <div>
+                                <h3>Blogger</h3>
+                                <span class="status-badge" id="bloggerBadge">Not Connected</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-connect" id="bloggerAuthBtn">
+                            <span>Connect Blogger</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="form-section" id="formSection" style="display: none;">
+                <div class="section-header">
+                    <h2>Create New Post</h2>
+                    <p>Fill in the details to publish across both platforms</p>
+                </div>
+
+                <form id="postForm">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required placeholder="Enter post title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="5" required placeholder="Write your post description..."></textarea>
+                        <small class="helper-text">
+                            <span id="charCount">0</span>/500 characters (Pinterest limit)
+                        </small>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="boardId">Pinterest Board</label>
+                            <select id="boardId" name="boardId" required>
+                                <option value="">Select board</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="blogId">Blogger Websites</label>
+                            <select id="blogId" name="blogId" required>
+                                <option value="">Select blog</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category/Labels (Blogger)</label>
+                            <input type="text" id="category" name="category" placeholder="e.g., Technology, Lifestyle">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="link">Link (Optional)</label>
+                            <input type="url" id="link" name="link" placeholder="https://example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keywords">Keywords</label>
+                        <input type="text" id="keywords" name="keywords" placeholder="Separate with commas">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="images">Upload Images</label>
+                        <div class="file-upload">
+                            <input type="file" id="images" name="images" accept="image/*" multiple required>
+                            <label for="images" class="file-label">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span id="fileText">Choose images or drag and drop</span>
+                            </label>
+                        </div>
+                        <div id="imagePreview" class="image-preview"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span id="submitText">Publish Content</span>
+                        <div class="spinner" id="spinner" style="display: none;"></div>
+                    </button>
+                </form>
+            </section>
+
+            
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="section-header">
+                    <h2>Publishing Results</h2>
+                </div>
+                <div id="resultsGrid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
