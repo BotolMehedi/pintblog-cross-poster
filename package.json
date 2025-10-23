@@ -1,0 +1,22 @@
+{
+  "name": "pintblog",
+  "version": "1.0.1",
+  "description": "PintBlog is an automated cross-posting tool for Pinterest & Blogger. Publish your content to both platforms at once. One click, two platforms! Simplify and automate your content sharing.",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node api/index.js",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "form-data": "^4.0.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
