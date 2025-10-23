@@ -59,7 +59,7 @@ Before you begin, make sure you have:
 
    ```bash
    git clone https://github.com/BotolMehedi/pintblog-cross-poster.git
-   cd pintblog
+   cd pintblog-cross-poster
    ```
 
 2. **Install dependencies**
