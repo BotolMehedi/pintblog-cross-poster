@@ -73,13 +73,13 @@ Before you begin, make sure you have:
    Create a `.env` file in the root directory:
 
    ```env
-MONGO_URI=your_info
-PINTEREST_CLIENT_ID=your_info
-PINTEREST_CLIENT_SECRET=your_info
-PINTEREST_REDIRECT_URI=your_info
-BLOGGER_CLIENT_ID=your_info
-BLOGGER_CLIENT_SECRET=your_info
-BLOGGER_REDIRECT_URI=your_info
+   MONGO_URI=your_info
+   PINTEREST_CLIENT_ID=your_info
+   PINTEREST_CLIENT_SECRET=your_info
+   PINTEREST_REDIRECT_URI=your_info
+   BLOGGER_CLIENT_ID=your_info
+   BLOGGER_CLIENT_SECRET=your_info
+   BLOGGER_REDIRECT_URI=your_info
    ```
 
 4. **Run the application**
